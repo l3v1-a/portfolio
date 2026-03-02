@@ -1,0 +1,401 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of Levi Ackerman — Full-Stack Developer & UI/UX Designer" />
+  <title>Levi Ackerman | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">Levi Ackerman</a>
+
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Hire Me</a>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="#about"    onclick="closeMobileNav()">About</a>
+    <a href="#projects" onclick="closeMobileNav()">Projects</a>
+    <a href="#services" onclick="closeMobileNav()">Services</a>
+    <a href="#contact"  onclick="closeMobileNav()">Contact</a>
+  </div>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section id="hero">
+    <canvas id="particles-canvas"></canvas>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+
+    <div class="container">
+      <div class="hero-content">
+
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Available for freelance work
+        </div>
+
+        <h1 class="hero-name">
+          Hi, I'm<br />
+          <span class="highlight">Levi Ackerman</span>
+        </h1>
+
+        <p class="hero-tagline">
+          <strong>Building Digital Experiences That Matter.</strong><br />
+          Full-Stack Developer &amp; Video Editor &amp; UI/UX Designer
+          performant, and beautiful products.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa fa-rocket"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa fa-envelope"></i> Contact Me
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Image column -->
+        <div class="about-image-wrap reveal">
+          <div class="about-image-box">
+            <img src="images/levi.png" alt="Levi Ackerman" class="about-avatar-img" />
+          </div>
+          <div class="about-float-badge glass-card">
+            <div class="float-badge-number">1+</div>
+            <div class="float-badge-text">Year of<br/>Experience</div>
+          </div>
+        </div>
+
+        <!-- Text column -->
+        <div class="about-text reveal">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Passionate About <span>Crafting Code</span><br />into Experiences</h2>
+
+          <p class="about-description">
+            I'm a full-stack developer and UI/UX designer based in India with over 1 years of
+            experience building scalable web applications and intuitive user interfaces. I love
+            turning complex problems into simple, elegant solutions that genuinely delight people.
+          </p>
+          <p class="about-description">
+            When I'm not writing code, you'll find me exploring new technologies, contributing to
+            open-source projects, or sharing what I learn through blog posts and community talks.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">5</div>
+              <div class="stat-label">Projects Done</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">2</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">1</div>
+              <div class="stat-label">Year Exp.</div>
+            </div>
+          </div>
+
+          <!-- Skill Bars -->
+          <p class="skills-title">Core Skills</p>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Frontend Development</span><span>92%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>UI / UX Design</span><span>85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Backend & APIs</span><span>10%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="10"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Video Editing</span><span>50%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="50"></div></div>
+            </div>
+          </div>
+
+          <!-- Tech Stack -->       
+          <div class="tech-stack">
+            <p class="tech-stack-title">Tech Stack</p>
+            <div class="tech-icons">
+              <span class="tech-icon"><i class="fab fa-html5" style="color:#e34f26"></i> HTML5</span>
+              <span class="tech-icon"><i class="fab fa-css3-alt" style="color:#1572b6"></i> CSS3</span>
+              <span class="tech-icon"><i class="fab fa-js-square" style="color:#f7df1e"></i> JavaScript</span>
+              <span class="tech-icon"><i class="fab fa-react" style="color:#61dafb"></i> React</span>
+              <span class="tech-icon"><i class="fab fa-node-js" style="color:#339933"></i> Node.js</span>
+              <span class="tech-icon"><i class="fab fa-python" style="color:#3776ab"></i> Python</span>
+              <span class="tech-icon"><i class="fab fa-git-alt" style="color:#f05032"></i> Git</span>
+              <span class="tech-icon"><i class="fa-solid fa-video" style="color:#a259ff"></i> After Effects</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+  ============================================================ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">My Work</span>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <p class="section-subtitle">A curated selection of projects I've built — from sleek dashboards to full-stack applications.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Guess the Number -->
+        <div class="project-card reveal">
+          <div class="project-image" style="background: linear-gradient(135deg,rgba(0,212,255,.15),rgba(124,58,237,.22))">
+            <div class="project-image-placeholder"><i class="fa fa-dice fa-3x"></i></div>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Mini Game</span>
+            <h3 class="project-title">Guess the Number</h3>
+            <p class="project-desc">An interactive number-guessing game where the player guesses a randomly generated number with hints like "Too High" or "Too Low".</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://guessthenumber-0xsi.onrender.com" target="_blank" class="btn btn-primary btn-sm">
+                <i class="fa fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coming Soon Card 2 -->
+        <div class="project-card project-card--coming-soon reveal">
+          <div class="coming-soon-banner">Coming Soon</div>
+          <div class="project-image" style="background: linear-gradient(135deg,rgba(236,72,153,.10),rgba(124,58,237,.12))">
+            <div class="coming-soon-icon"><i class="fa fa-laptop-code"></i></div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Project Incoming</h3>
+            <p class="project-desc">Working hard on exciting projects. Check back soon!</p>
+          </div>
+        </div>
+
+        <!-- Coming Soon Card 3 -->
+        <div class="project-card project-card--coming-soon reveal">
+          <div class="coming-soon-banner">Coming Soon</div>
+          <div class="project-image" style="background: linear-gradient(135deg,rgba(0,212,100,.08),rgba(0,212,255,.12))">
+            <div class="coming-soon-icon"><i class="fa fa-rocket"></i></div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Project Incoming</h3>
+            <p class="project-desc">Great things take time. Exciting work is on the way!</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES SECTION
+  ============================================================ -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What I Do</span>
+        <h2 class="section-title">Services I <span>Offer</span></h2>
+        <p class="section-subtitle">End-to-end digital solutions tailored to help your business grow and stand out.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa fa-code"></i></div>
+          <h3 class="service-title">Web Development</h3>
+          <p class="service-desc">Building fast, scalable, and accessible web applications with modern frameworks like React, Next.js, and Node.js. From MVPs to enterprise platforms.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa fa-pen-ruler"></i></div>
+          <h3 class="service-title">UI / UX Design</h3>
+          <p class="service-desc">Designing intuitive, pixel-perfect interfaces that balance aesthetics with usability. Wireframes, prototypes, and full design systems in Figma.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa fa-mobile-screen"></i></div>
+          <h3 class="service-title">Cybersecurity</h3>
+          <p class="service-desc">Protecting digital assets with secure coding practices, penetration testing, and vulnerability assessments. Ensuring compliance with industry standards.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa fa-cloud"></i></div>
+          <h3 class="service-title">Video Editing</h3>
+          <p class="service-desc">Creating compelling video content for marketing, tutorials, and product demos. Professional editing in After Effects, Premiere Pro, and DaVinci Resolve.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left info column -->
+        <div class="reveal">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title">Let's Build Something <span>Together</span></h2>
+          <p>Have a project in mind or just want to say hello? My inbox is always open. I typically respond within 24 hours.</p>
+
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fa fa-envelope"></i></div>
+            <div class="contact-item-body">
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-value">leviackerman6560@gmail.com</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fa fa-location-dot"></i></div>
+            <div class="contact-item-body">
+              <div class="contact-item-label">Location</div>
+              <div class="contact-item-value">Lucknow, India — Remote Worldwide</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fa fa-clock"></i></div>
+            <div class="contact-item-body">
+              <div class="contact-item-label">Availability</div>
+              <div class="contact-item-value">Open to new projects — Feb 2026</div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/l3v1-a" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/aditya-verma-l3v1" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/radhakrishn656" class="social-link" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/_.l3v1_/" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://discord.com/channels/@whitedevil8971" class="social-link" title="Discord"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+
+        <!-- Right form column -->
+        <div class="contact-form-wrap reveal">
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project inquiry…" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              <i class="fa fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-status" id="form-status"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">Levi Ackerman</div>
+        <p class="footer-copy">
+          &copy; 2026 Levi Ackerman. Made with <span>&#9829;</span> and lots of coffee.
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/l3v1-a" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/aditya-verma-l3v1" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/radhakrishn656" class="social-link" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back-to-top -->
+  <button id="back-top" aria-label="Back to top">
+    <i class="fa fa-chevron-up"></i>
+  </button>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js" defer></script>
+
+</body>
+</html>
