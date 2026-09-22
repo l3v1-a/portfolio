@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="description" content="Aditya Verma (Levi) — Video Editor, Motion Designer & Visual Storyteller." />
+<title>Levi — Video Editor & Visual Storyteller</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#070607;--panel:#0d0b0c;--panel2:#121013;--text:#f5eee0;--muted:#a69e94;--muted2:#766f68;
+  --gold:#d0a85d;--gold2:#e4c17d;--blue:#3156a8;--red:#dc4537;--line:rgba(245,238,224,.13);
+  --shadow:0 35px 100px rgba(0,0,0,.5);--radius:3px;
+  --sans:"Instrument Sans",system-ui,sans-serif;--display:"Bodoni Moda",Georgia,serif;--mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+:root.light{--bg:#f4f0e8;--panel:#fffdf8;--panel2:#eee8dd;--text:#171411;--muted:#625d55;--muted2:#8f887f;--gold:#bf7b14;--gold2:#d59222;--blue:#284a93;--red:#b53229;--line:rgba(23,20,17,.14);--shadow:0 30px 80px rgba(38,27,15,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--bg)}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.25'/%3E%3C/svg%3E");opacity:.045}.wrap{width:min(1240px,calc(100% - 56px));margin:auto}.mono{font-family:var(--mono)}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit;color:inherit}button{cursor:pointer}.hide{display:none!important}
+/* NAV */
+.nav{position:fixed;left:0;right:0;top:0;z-index:80;transition:transform .35s ease,background .35s ease;border-bottom:1px solid transparent}.nav.scrolled{background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(18px);border-bottom-color:var(--line)}.nav.hidden{transform:translateY(-100%)}.navin{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:var(--display);font-size:1.55rem;letter-spacing:.02em}.navlinks{display:flex;gap:26px;align-items:center;font-size:.9rem}.navlinks a{opacity:.65;position:relative;padding:8px 0}.navlinks a:after{content:"";position:absolute;height:1px;background:var(--gold);left:0;right:100%;bottom:0;transition:right .25s}.navlinks a:hover,.navlinks a.active{opacity:1;color:var(--gold2)}.navlinks a:hover:after,.navlinks a.active:after{right:0}.navactions{display:flex;gap:8px;align-items:center}.iconbtn{width:40px;height:40px;border:1px solid var(--line);background:transparent;border-radius:50%;display:grid;place-items:center}.mobilemenu{display:none}
+/* HERO */
+.hero{min-height:100svh;display:grid;align-items:center;padding:120px 0 60px}.heroGrid{display:grid;grid-template-columns:1fr 1.05fr;gap:70px;align-items:center}.eyebrow{color:var(--gold2);font-weight:600;font-size:.98rem;letter-spacing:.01em}.hero h1{font-family:var(--display);font-size:clamp(3.3rem,6.8vw,6.4rem);line-height:.97;font-weight:500;letter-spacing:-.03em;margin:18px 0 20px}.hero p{color:var(--muted);max-width:52ch;font-size:1.05rem;line-height:1.75}.heroBtns{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 18px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;border-radius:2px;border:1px solid transparent;font-weight:700;font-size:.92rem;transition:transform .25s,background .25s,border .25s,color .25s}.btn:hover{transform:translateY(-2px)}.btnPrimary{background:var(--gold);color:#1c1306}.btnGhost{border-color:var(--line)}.btnGhost:hover{border-color:var(--gold);color:var(--gold2)}.availability{display:flex;gap:9px;align-items:center;color:var(--muted);font-size:.9rem}.dot{width:7px;height:7px;background:var(--gold);border-radius:50%;box-shadow:0 0 0 5px color-mix(in srgb,var(--gold) 12%,transparent)}
+/* MONITOR */
+.stage{position:relative}.monitor{height:min(61vh,520px);position:relative;display:grid;place-items:center}.monitorGlow{position:absolute;inset:0;background:radial-gradient(50% 50% at 52% 48%,rgba(192,73,36,.18),transparent 68%)}.screen{position:relative;width:min(74%,500px);aspect-ratio:16/9;border:1px solid rgba(245,238,224,.16);background:#080708;box-shadow:var(--shadow);overflow:hidden;transition:width .75s cubic-bezier(.65,0,.25,1),aspect-ratio .75s}.screen.vertical{width:min(48%,285px);aspect-ratio:9/16}.screen.wide{width:min(90%,760px);aspect-ratio:2.39/1}.screen:before,.screen:after{content:"";position:absolute;width:12px;height:12px;border-color:var(--gold);opacity:.8;z-index:6}.screen:before{left:10px;top:10px;border-left:1px solid;border-top:1px solid}.screen:after{right:10px;bottom:10px;border-right:1px solid;border-bottom:1px solid}.scene{position:absolute;inset:0;opacity:0;transition:opacity .55s}.scene.active{opacity:1}.art{position:absolute;inset:-8%;background-size:cover;background-position:center;animation:push 7s linear infinite alternate}.scene1 .art{background:radial-gradient(circle at 26% 20%,rgba(239,168,101,.7),transparent 34%),radial-gradient(circle at 80% 80%,rgba(137,28,61,.85),transparent 52%),linear-gradient(145deg,#301119,#0f0809)}.scene2 .art{background:radial-gradient(circle at 78% 20%,rgba(231,174,92,.55),transparent 35%),radial-gradient(circle at 15% 85%,rgba(34,118,129,.72),transparent 50%),linear-gradient(145deg,#07171b,#071012)}.scene3 .art{background:radial-gradient(circle at 50% 52%,rgba(206,169,95,.48),transparent 48%),radial-gradient(circle at 96% 5%,rgba(48,67,154,.6),transparent 42%),linear-gradient(90deg,#070811,#17130b 52%,#08070a)}.shade{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.7)),radial-gradient(80% 70% at 50% 50%,transparent 30%,rgba(0,0,0,.38) 100%)}.sceneTitle{position:absolute;left:28px;bottom:24px;z-index:3;font-family:var(--display);font-size:clamp(1.2rem,2vw,2rem)}.sceneMeta{position:absolute;right:24px;top:22px;z-index:3;color:rgba(245,238,224,.7);font-size:.7rem;text-transform:uppercase;letter-spacing:.15em}.flare{position:absolute;left:-10%;right:-10%;top:50%;height:1px;background:linear-gradient(90deg,transparent,var(--gold2),transparent);box-shadow:0 0 28px rgba(225,192,119,.6);animation:drift 4.5s ease-in-out infinite alternate}.transport{display:flex;align-items:center;gap:12px;margin-top:12px}.pp{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:transparent;display:grid;place-items:center}.timecode{font-size:.86rem;letter-spacing:.05em}.sceneName{margin-left:auto;color:var(--muted);font-size:.83rem}.timeline{margin-top:15px;display:grid;grid-template-columns:28px 1fr;gap:10px}.labels,.lanes{display:grid;grid-template-rows:17px 24px 38px 31px;gap:5px}.labels{color:var(--muted2);font-size:.68rem}.labels span{display:flex;align-items:center}.lanes{position:relative;cursor:ew-resize;touch-action:pan-y;user-select:none}.ruler{background:repeating-linear-gradient(90deg,color-mix(in srgb,var(--text) 28%,transparent) 0 1px,transparent 1px 8.3333%);background-position:bottom;background-size:100% 6px;background-repeat:no-repeat}.lane{position:relative;overflow:hidden;background:color-mix(in srgb,var(--text) 5%,transparent);border-radius:2px}.clip{position:absolute;top:0;bottom:0;padding:4px 8px;border:1px solid rgba(255,255,255,.12);border-radius:2px;font-size:.66rem;white-space:nowrap;transition:.25s}.clip.on{box-shadow:inset 0 0 0 1px var(--gold2);filter:brightness(1.1)}.clip.reel{background:linear-gradient(180deg,#7f303b,#5a1d27)}.clip.yt{background:linear-gradient(180deg,#296d76,#1a4f59)}.clip.motion{background:linear-gradient(180deg,#9a7b45,#715a31)}.overlay{background:rgba(245,238,224,.14)}.wave{height:100%;display:flex;align-items:center;gap:2px;padding:3px 2px}.bar{flex:1;background:color-mix(in srgb,var(--gold) 62%,transparent);border-radius:2px;min-width:2px}.playhead{position:absolute;top:0;bottom:0;width:1.5px;left:0;background:var(--red);z-index:6}.playhead:before{content:"";position:absolute;top:-1px;left:-5px;border-left:5px solid transparent;border-right:5px solid transparent;border-top:8px solid var(--red)}
+/* SECTIONS */
+section{padding:110px 0;border-top:1px solid var(--line)}.sectionTop{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:44px}.kicker{color:var(--gold2);font-size:.76rem;text-transform:uppercase;letter-spacing:.17em}.sectionTitle{font-family:var(--display);font-weight:500;font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.02;margin-top:10px}.sectionDesc{max-width:48ch;color:var(--muted);line-height:1.75}
+/* WORK */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}.filter{border:1px solid var(--line);background:transparent;padding:9px 12px;font-size:.77rem;text-transform:uppercase;letter-spacing:.08em;border-radius:2px}.filter.active,.filter:hover{border-color:var(--gold);color:var(--gold2)}.workGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.workCard{background:var(--panel);border:1px solid var(--line);transition:transform .35s,border .35s;cursor:pointer}.workCard:hover{transform:translateY(-5px);border-color:color-mix(in srgb,var(--gold) 55%,var(--line))}.thumb{aspect-ratio:16/10;position:relative;overflow:hidden;background:#0a0809}.thumb img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;transition:transform .5s ease}.workCard:hover .thumb img{transform:scale(1.05)}.thumb:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(0,0,0,.55))}.thumb .art{transition:transform .8s}.workCard:hover .thumb .art{transform:scale(1.05)}.thumbLabel{position:absolute;z-index:3;left:16px;bottom:14px;font-family:var(--display);font-size:1.25rem}.workInfo{padding:17px}.workMeta{display:flex;justify-content:space-between;color:var(--muted2);font-size:.71rem;text-transform:uppercase;letter-spacing:.09em}.workInfo p{margin-top:7px;color:var(--muted);font-size:.88rem;line-height:1.55}.workBadge{display:inline-flex;margin-top:12px;padding:5px 7px;border:1px solid var(--line);font-size:.66rem;color:var(--gold2);text-transform:uppercase;letter-spacing:.08em}
+/* PROCESS */
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.step{background:var(--bg);padding:28px;min-height:220px}.num{font-family:var(--display);font-size:2rem;color:var(--gold2);display:block;margin-bottom:35px}.step h3{font-size:1rem;margin:0 0 10px}.step p{color:var(--muted);line-height:1.7;font-size:.9rem}
+/* ABOUT / SKILLS */
+.aboutGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:65px}.aboutText{font-family:var(--display);font-size:clamp(1.65rem,2.7vw,2.55rem);line-height:1.3}.aboutText span{color:var(--gold2)}.factsGrid{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line)}.fact{padding:16px 0;border-bottom:1px solid var(--line)}.fact small{display:block;color:var(--muted2);text-transform:uppercase;letter-spacing:.1em;font-size:.65rem;margin-bottom:7px}.fact strong{font-weight:600}.skillTags{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px}.tag{border:1px solid var(--line);padding:8px 10px;font-size:.74rem;color:var(--muted)}
+/* SERVICES */
+.services{display:grid;grid-template-columns:1fr 1fr;gap:18px}.service{padding:26px;border:1px solid var(--line);background:linear-gradient(160deg,color-mix(in srgb,var(--gold) 4%,var(--panel)),var(--panel));min-height:210px;transition:border .3s,transform .3s}.service:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--gold) 50%,var(--line))}.service .idx{font-family:var(--mono);font-size:.72rem;color:var(--gold2)}.service h3{font-family:var(--display);font-weight:500;font-size:1.6rem;margin:40px 0 9px}.service p{color:var(--muted);max-width:48ch;font-size:.9rem;line-height:1.65}
+/* PRICING */
+.pricing{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.priceCard{border:1px solid var(--line);padding:26px;background:var(--panel)}.priceCard.featured{border-color:color-mix(in srgb,var(--gold) 60%,var(--line));box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--gold) 18%,transparent)}.priceCard h3{font-family:var(--display);font-size:1.55rem;font-weight:500;margin:0 0 8px}.price{font-family:var(--display);font-size:2.1rem;color:var(--gold2);margin:18px 0}.priceCard ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}.priceCard li{font-size:.86rem;color:var(--muted);padding-left:16px;position:relative}.priceCard li:before{content:"";position:absolute;left:0;top:.65em;width:8px;height:1px;background:var(--gold)}
+/* CONTACT */
+.contactBox{border:1px solid var(--line);padding:45px;background:radial-gradient(55% 80% at 80% 15%,rgba(49,86,168,.15),transparent 65%),radial-gradient(40% 80% at 15% 90%,rgba(192,88,34,.14),transparent 65%),var(--panel)}.contactGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:end}.contactBox h2{font-family:var(--display);font-size:clamp(2.4rem,5vw,4.7rem);line-height:1.03;margin:10px 0 18px}.contactBox p{color:var(--muted);max-width:52ch;line-height:1.75}.contactLinks{display:grid;gap:9px}.contactLink{padding:14px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.contactLink span{color:var(--muted);font-size:.85rem}.contactLink strong{color:var(--gold2);font-weight:600}.footer{padding:40px 0 50px;color:var(--muted2);font-size:.82rem;display:flex;justify-content:space-between;gap:15px}
+/* MODAL */
+.modal{position:fixed;inset:0;z-index:120;background:rgba(0,0,0,.72);backdrop-filter:blur(16px);display:none;align-items:center;justify-content:center;padding:25px}.modal.open{display:flex}.modalPanel{width:min(1120px,100%);max-height:92svh;overflow:auto;background:var(--panel);border:1px solid var(--line);box-shadow:var(--shadow)}.modalHead{padding:18px 22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:color-mix(in srgb,var(--panel) 92%,transparent);backdrop-filter:blur(10px);z-index:3}.close{width:40px;height:40px;border:1px solid var(--line);border-radius:50%;background:transparent}.modalBody{padding:22px}.projectHero{display:grid;grid-template-columns:1.25fr .75fr;gap:22px}.player{aspect-ratio:16/9;background:#030303;border:1px solid var(--line);position:relative;overflow:hidden}.player .art{background:radial-gradient(circle at 30% 25%,rgba(232,178,102,.42),transparent 28%),radial-gradient(circle at 80% 75%,rgba(49,86,168,.44),transparent 33%),linear-gradient(135deg,#171017,#070608)}.playerOverlay{position:absolute;inset:0;display:grid;place-items:center}.playerOverlay .playbig{width:68px;height:68px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;background:rgba(0,0,0,.25)}.projectCopy h2{font-family:var(--display);font-size:2.7rem;line-height:1.05;margin:.35rem 0 14px}.projectCopy p{color:var(--muted);line-height:1.7}.projectMeta{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);margin-top:20px}.metaItem{padding:13px 0;border-bottom:1px solid var(--line)}.metaItem small{display:block;color:var(--muted2);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}.breakdown{margin-top:25px;border-top:1px solid var(--line);padding-top:22px}.breakdown h3{font-family:var(--display);font-size:1.55rem;margin:0 0 12px}.breakdownRow{display:grid;grid-template-columns:100px 1fr;gap:15px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.85rem}.breakdownRow time{font-family:var(--mono);color:var(--gold2)}.modalTimeline{margin-top:15px}.notice{padding:12px 14px;border:1px dashed var(--line);color:var(--muted);font-size:.82rem;margin-top:18px}
+/* responsive */
+@media(max-width:980px){.heroGrid,.aboutGrid,.contactGrid,.projectHero{grid-template-columns:1fr}.hero{padding-top:110px}.monitor{height:480px}.workGrid{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.services,.pricing{grid-template-columns:1fr}.navlinks{display:none}.mobilemenu{display:grid}.navopen .navlinks{display:flex;position:absolute;top:72px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--line);padding:20px 28px;flex-direction:column;align-items:flex-start}.wrap{width:min(100% - 36px,1240px)}}
+@media(max-width:620px){.heroGrid{gap:25px}.monitor{height:420px}.screen{width:88%}.screen.vertical{width:46%}.screen.wide{width:100%}.sectionTop{align-items:start;flex-direction:column}.workGrid{grid-template-columns:1fr}.process{grid-template-columns:1fr}.factsGrid{grid-template-columns:1fr}.contactBox{padding:28px}.hero h1{font-size:3.25rem}.sceneName{display:none}.footer{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+@keyframes push{from{transform:scale(1)}to{transform:scale(1.08)}}@keyframes drift{from{transform:translateX(-8%)}to{transform:translateX(8%)}}
+
+/* CONTACT FORM */
+.formCard{margin-top:36px;border-top:1px solid var(--line);padding-top:28px}
+.formGrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.formField{display:grid;gap:7px}.formField.full{grid-column:1/-1}
+.formField label{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted2)}
+.formField input,.formField textarea,.formField select{width:100%;background:color-mix(in srgb,var(--text) 4%,transparent);border:1px solid var(--line);border-radius:2px;padding:12px 13px;outline:none}
+.formField textarea{min-height:120px;resize:vertical}.formField input:focus,.formField textarea:focus,.formField select:focus{border-color:var(--gold)}
+.formStatus{margin-top:12px;font-size:.85rem;color:var(--muted);min-height:1.2em}
+@media(max-width:620px){.formGrid{grid-template-columns:1fr}.formField.full{grid-column:auto}}
+</style>
+</head>
+<body>
+<header class="nav" id="nav">
+  <div class="wrap navin">
+    <a class="brand" href="#home">Levi</a>
+    <nav class="navlinks" id="navlinks" aria-label="Primary">
+      <a href="#home" class="active">Home</a><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="navactions"><button class="iconbtn" id="themeBtn" aria-label="Toggle theme">☼</button><button class="iconbtn mobilemenu" id="menuBtn" aria-label="Open menu">☰</button></div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap heroGrid">
+    <div>
+      <div class="eyebrow">aka Levi — Video Editor & Visual Storyteller</div>
+      <h1>Aditya Verma</h1>
+      <p>I edit Reels, YouTube videos, cinematic pieces and motion-led content with a focus on story, rhythm, sound and visual movement.</p>
+      <div class="heroBtns"><a class="btn btnPrimary" href="#work">Explore work</a><a class="btn btnGhost" href="#showreel" id="showreelBtn">Watch showreel</a></div>
+      <div class="availability"><span class="dot"></span>Open to freelance projects — Lucknow, India / Worldwide</div>
+      <div class="factsGrid" style="margin-top:30px;max-width:580px">
+        <div class="fact"><small>Name</small><strong>Aditya Verma</strong></div><div class="fact"><small>Also known as</small><strong>Levi</strong></div>
+        <div class="fact"><small>Focus</small><strong>Short-form · Cinematic · Motion</strong></div><div class="fact"><small>Experience</small><strong>6 months</strong></div>
+      </div>
+    </div>
+    <div class="stage">
+      <div class="monitorGlow"></div>
+      <div class="monitor" id="monitor">
+        <div class="screen vertical" id="screen">
+          <div class="scene scene1 active"><span class="art"></span><span class="shade"></span><span class="sceneMeta">01 / 03</span><span class="sceneTitle">Reels & Shorts</span></div>
+          <div class="scene scene2"><span class="art"></span><span class="shade"></span><span class="sceneMeta">02 / 03</span><span class="sceneTitle">YouTube edits</span></div>
+          <div class="scene scene3"><span class="art"></span><span class="flare"></span><span class="shade"></span><span class="sceneMeta">03 / 03</span><span class="sceneTitle">Motion design</span></div>
+        </div>
+      </div>
+      <div class="transport"><button class="pp" id="playPause" aria-label="Pause preview">Ⅱ</button><span class="timecode mono" id="timecode">00:00:02:20</span><span class="sceneName" id="sceneName">Reels & Shorts, 9:16</span></div>
+      <div class="timeline" aria-label="Hero timeline preview">
+        <div class="labels"><span></span><span>V2</span><span>V1</span><span>A1</span></div>
+        <div class="lanes" id="heroTimeline" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="12" aria-valuenow="2" aria-label="Hero timeline">
+          <div class="ruler"></div><div class="lane" id="v2"></div><div class="lane" id="v1"></div><div class="lane" id="a1"><div class="wave" id="wave"></div></div><div class="playhead" id="playhead"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="showreel">
+ <div class="wrap">
+  <div class="sectionTop"><div><div class="kicker">Featured sequence</div><h2 class="sectionTitle">The showreel.</h2></div><p class="sectionDesc">A portfolio-specific reel can live here when you are ready to upload it. The player and timeline are built into the page structure.</p></div>
+  <div class="projectHero">
+    <div class="player"><span class="art"></span><div class="playerOverlay"><button class="playbig" id="reelPreview">▶</button></div></div>
+    <div class="projectCopy"><div class="kicker">SHOWREEL 2026</div><h2>Edited for rhythm.</h2><p>Replace this poster with the final showreel. The production design is ready for a 45–75 second portfolio sequence.</p><div class="projectMeta"><div class="metaItem"><small>Format</small><strong>16:9 / 4K ready</strong></div><div class="metaItem"><small>Style</small><strong>Cinematic / fast / clean</strong></div><div class="metaItem"><small>Sound</small><strong>Music + SFX + dialogue</strong></div><div class="metaItem"><small>Controls</small><strong>Timeline / markers / timecode</strong></div></div><div class="notice">Demo state: no showreel asset was provided yet. Replace this poster and connect the real video from the project config.</div></div>
+  </div>
+ </div>
+</section>
+
+<section id="work">
+ <div class="wrap">
+  <div class="sectionTop"><div><div class="kicker">Selected work</div><h2 class="sectionTitle">Edits, not promises.</h2></div><p class="sectionDesc">A work-first portfolio. Filter by format, then open a project to explore the editing story.</p></div>
+  <div class="filters" id="filters"></div><div class="workGrid" id="workGrid"></div>
+ </div>
+</section>
+
+<section id="services">
+ <div class="wrap">
+  <div class="sectionTop"><div><div class="kicker">What I do</div><h2 class="sectionTitle">Services.</h2></div><p class="sectionDesc">Core work for creators, brands, agencies, filmmakers and organizations.</p></div>
+  <div class="services" id="servicesGrid"></div>
+  <div style="margin-top:55px"><div class="kicker">Process</div><div class="process" style="margin-top:18px">
+   <article class="step"><span class="num">01</span><h3>Brief</h3><p>You share footage, references and where the video will live.</p></article><article class="step"><span class="num">02</span><h3>Assembly</h3><p>I build structure and pacing first so the story works before the polish.</p></article><article class="step"><span class="num">03</span><h3>Rhythm</h3><p>Motion, sound, typography and transitions are shaped around the cut.</p></article><article class="step"><span class="num">04</span><h3>Finish</h3><p>Final cleanup, export and delivery in the right format for the platform.</p></article>
+  </div></div>
+ </div>
+</section>
+
+<section id="about">
+ <div class="wrap">
+  <div class="sectionTop"><div><div class="kicker">About the editor</div><h2 class="sectionTitle">Still early. Already obsessed.</h2></div></div>
+  <div class="aboutGrid">
+   <div><p class="aboutText">I’m <span>Aditya Verma</span>, working as Levi — an emerging video editor focused on cinematic pacing, short-form energy, motion and sound. I’m six months into editing seriously and building the portfolio around the work itself.</p><div class="skillTags"><span class="tag">Premiere Pro</span><span class="tag">After Effects</span><span class="tag">Photoshop</span><span class="tag">Sound Design</span><span class="tag">Motion Graphics</span><span class="tag">Storytelling</span></div></div>
+   <div><div class="factsGrid"><div class="fact"><small>Based in</small><strong>Lucknow, India</strong></div><div class="fact"><small>Available</small><strong>Worldwide</strong></div><div class="fact"><small>Paid clients</small><strong>2</strong></div><div class="fact"><small>Real-world projects</small><strong>Abhirang · Stree Welfare Foundation</strong></div></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="pricing">
+ <div class="wrap">
+  <div class="sectionTop"><div><div class="kicker">Starting points</div><h2 class="sectionTitle">Pricing.</h2></div><p class="sectionDesc">Keep the numbers editable. These are placeholders until you set your actual packages.</p></div>
+  <div class="pricing" id="pricingGrid"></div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap">
+  <div class="contactBox"><div class="contactGrid">
+   <div>
+    <div class="kicker">Start a project</div>
+    <h2>Got footage and a story?<br>Let’s cut it together.</h2>
+    <p>Tell me what you’re making, where it will be posted, what you already have and when you need it. Your brief goes straight into the private project inbox.</p>
+    <div class="heroBtns"><a class="btn btnGhost" href="#work">See work first</a></div>
+    <form class="formCard" id="inquiryForm" enctype="multipart/form-data">
+      <div class="formGrid">
+        <div class="formField"><label for="fName">Name *</label><input id="fName" name="name" required autocomplete="name"></div>
+        <div class="formField"><label for="fEmail">Email *</label><input id="fEmail" name="email" type="email" required autocomplete="email"></div>
+        <div class="formField"><label for="fCompany">Company / creator name</label><input id="fCompany" name="company"></div>
+        <div class="formField"><label for="fService">Service</label><select id="fService" name="service"><option value="">Select</option><option>Short-form / Reels</option><option>Cinematic Videos</option><option>Motion Graphics</option><option>Event Videos</option><option>Sound Design</option><option>Social Media Content Editing</option><option>YouTube / Long-form</option><option>Other</option></select></div>
+        <div class="formField"><label for="fType">Project type</label><input id="fType" name="project_type" placeholder="Reel, YouTube video, event film…"></div>
+        <div class="formField"><label for="fBudget">Budget</label><input id="fBudget" name="budget" placeholder="e.g. ₹2,000 / per video"></div>
+        <div class="formField"><label for="fDeadline">Deadline</label><input id="fDeadline" name="deadline" placeholder="e.g. 5 Oct 2026"></div>
+        <div class="formField"><label for="fDuration">Video duration</label><input id="fDuration" name="video_duration" placeholder="e.g. 30 sec / 8 min"></div>
+        <div class="formField"><label for="fPlatform">Platform</label><input id="fPlatform" name="platform" placeholder="Instagram, YouTube, brand site…"></div>
+        <div class="formField"><label for="fRaw">Raw footage available?</label><select id="fRaw" name="raw_footage_available"><option value="">Select</option><option>Yes</option><option>No</option><option>Partially</option></select></div>
+        <div class="formField full"><label for="fRefs">Reference links</label><textarea id="fRefs" name="reference_links" placeholder="Links to references / examples you like"></textarea></div>
+        <div class="formField full"><label for="fMessage">Project brief *</label><textarea id="fMessage" name="message" required placeholder="What are you making? What should the edit feel like? What should the viewer do or feel?"></textarea></div>
+        <div class="formField full"><label for="fFile">Attachment</label><input id="fFile" name="attachment" type="file" accept="video/*,image/*,audio/*,.pdf"></div>
+      </div>
+      <div style="margin-top:16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap"><button class="btn btnPrimary" type="submit">Send project brief →</button><span class="formStatus" id="formStatus"></span></div>
+    </form>
+   </div>
+   <div class="contactLinks">
+     <a class="contactLink" data-contact-instagram target="_blank" rel="noopener"><span>Instagram</span><strong>@_.iamlevi_ ↗</strong></a>
+     <a class="contactLink" data-contact-email hidden><span>Email</span><strong data-email-label>Connect in CMS</strong></a>
+     <a class="contactLink" data-contact-whatsapp hidden><span>WhatsApp</span><strong>Open chat ↗</strong></a>
+     <a class="contactLink" data-contact-fiverr hidden target="_blank" rel="noopener"><span>Fiverr</span><strong>View profile ↗</strong></a>
+   </div>
+  </div></div>
+ </div>
+</section>
+</main>
+<footer class="wrap footer"><span>© <span id="year"></span> Levi — Video Editor & Visual Storyteller.</span><span>Lucknow, India · Available Worldwide</span></footer>
+
+<div class="modal" id="modal" aria-hidden="true"><div class="modalPanel"><div class="modalHead"><strong id="modalKicker" class="mono">PROJECT</strong><button class="close" id="modalClose" aria-label="Close project">×</button></div><div class="modalBody" id="modalBody"></div></div></div>
+
+<script>
+(() => {
+  'use strict';
+  let SITE={settings:{},projects:[],services:[],pricing:[]};
+  let activeCat='All';
+  const $=s=>document.querySelector(s); const $$=s=>[...document.querySelectorAll(s)];
+  const escapeHtml=s=>String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#039;','"':'&quot;'}[c]));
+  function formatImageUrl(url,width=0){if(!url)return '';const u=String(url).trim(),dMatch=u.match(/\/file\/d\/([a-zA-Z0-9_-]+)/)||u.match(/[?&]id=([a-zA-Z0-9_-]+)/);if(dMatch&&(u.includes('drive.google.com')||u.includes('docs.google.com'))){const id=dMatch[1];return width?`https://lh3.googleusercontent.com/d/${id}=w${width}`:`https://lh3.googleusercontent.com/d/${id}`}return u;}
+  function renderVideoEmbed(url,poster=''){if(!url)return '';const u=String(url).trim(),escUrl=escapeHtml(u),escPoster=escapeHtml(formatImageUrl(poster));const dMatch=u.match(/\/file\/d\/([a-zA-Z0-9_-]+)/)||u.match(/[?&]id=([a-zA-Z0-9_-]+)/);if(dMatch&&(u.includes('drive.google.com')||u.includes('docs.google.com')))return `<iframe src="https://drive.google.com/file/d/${dMatch[1]}/preview" style="width:100%;height:100%;border:0;" allow="autoplay; fullscreen" allowfullscreen></iframe>`;const ytMatch=u.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?|shorts)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/);if(ytMatch)return `<iframe src="https://www.youtube.com/embed/${ytMatch[1]}?rel=0" style="width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;const vmMatch=u.match(/(?:vimeo\.com\/|player\.vimeo\.com\/video\/)(\d+)/);if(vmMatch)return `<iframe src="https://player.vimeo.com/video/${vmMatch[1]}" style="width:100%;height:100%;border:0;" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`;return `<video controls playsinline preload="metadata" poster="${escPoster}" style="width:100%;height:100%;object-fit:cover;background:#000"><source src="${escUrl}"></video>`}
+  const parseList=v=>Array.isArray(v)?v:(typeof v==='string'?(()=>{try{return JSON.parse(v)}catch{return v.split(',').map(x=>x.trim()).filter(Boolean)}})():[]);
+  const artClass=p=>{const c=(p.category||'').toLowerCase();if(c.includes('reel')||c.includes('social'))return 'scene1';if(c.includes('motion')||c.includes('youtube'))return 'scene2';if(c.includes('cinematic')||c.includes('event'))return 'scene3';return 'scene1'};
+
+  async function api(url,opts={}){const r=await fetch(url,opts);if(!r.ok)throw new Error((await r.json().catch(()=>({}))).error||`Request failed (${r.status})`);return r.status===204?null:r.json()}
+  async function loadSite(){
+    try{SITE=await api('/api/site');
+      applySettings(); renderWork(); renderServices(); renderPricing(); renderFilters();
+    }catch(e){console.error(e)}
+  }
+  function applySettings(){
+    const s=SITE.settings||{};
+    document.title=`${s.alias||'Levi'} | ${s.title||'Video Editor'}`;
+    const desc=document.querySelector('meta[name="description"]');if(desc)desc.content=`${s.name||'Aditya Verma'} (${s.alias||'Levi'}) — ${s.title||'Video Editor & Visual Storyteller'}.`;
+    const byAlias=$$('.eyebrow'); if(byAlias[0])byAlias[0].textContent=`aka ${s.alias||'Levi'} — Video Editor & Visual Storyteller`;
+    const h1=$('.hero h1');if(h1)h1.textContent=s.name||'Aditya Verma';
+    const heroP=$('.hero p');if(heroP)heroP.textContent=s.bio||'I edit short-form, cinematic and motion-led content with a focus on story, rhythm, sound and visual movement.';
+    const avail=$('.availability');if(avail)avail.innerHTML=`<span class="dot"></span>${escapeHtml(s.availability||'Open to freelance projects')} — ${escapeHtml(s.location||'Lucknow, India — Available Worldwide')}`;
+    const about=$('.aboutText');if(about)about.innerHTML=escapeHtml((s.bio||'I edit short-form, cinematic and motion-led content with a focus on story, rhythm, sound and visual movement.')).replace(/Levi/g,'<span>Levi</span>');
+    $$('[data-contact-instagram]').forEach(a=>a.href=`https://www.instagram.com/${s.instagram||'_.iamlevi_'}/`);
+    const e=$('[data-contact-email]');if(e&&s.email){e.hidden=false;e.href=`mailto:${s.email}`;const l=e.querySelector('[data-email-label]');if(l)l.textContent=s.email}
+    const w=$('[data-contact-whatsapp]');if(w&&s.whatsapp){w.hidden=false;w.href=`https://wa.me/${String(s.whatsapp).replace(/\D/g,'')}`}
+    const f=$('[data-contact-fiverr]');if(f&&s.fiverr){f.hidden=false;f.href=s.fiverr}
+    const reelPlayer=$('#showreel .player'), reelNotice=$('#showreel .notice');
+    if(reelPlayer&&s.showreel){
+      reelPlayer.innerHTML=renderVideoEmbed(s.showreel);
+      if(reelNotice)reelNotice.style.display='none';
+    }
+  }
+
+  const filters=$('#filters'), workGrid=$('#workGrid'), servicesGrid=$('#servicesGrid'), pricingGrid=$('#pricingGrid');
+  function categories(){const vals=SITE.projects.map(p=>p.category).filter(Boolean);return ['All',...new Set(vals)]}
+  function renderFilters(){if(!filters)return;const CATS=categories();filters.innerHTML=CATS.map(c=>`<button class="filter ${c===activeCat?'active':''}" data-cat="${escapeHtml(c)}">${escapeHtml(c)}</button>`).join('');$$('#filters .filter').forEach(b=>b.onclick=()=>{activeCat=b.dataset.cat;renderFilters();renderWork()})}
+  function renderWork(){
+    if(!workGrid)return;const list=activeCat==='All'?SITE.projects:SITE.projects.filter(p=>p.category===activeCat);
+    workGrid.innerHTML=list.length?list.map(p=>{const media=formatImageUrl(p.thumbnail_url||p.poster_url,600);return `<article class="workCard" data-slug="${escapeHtml(p.slug)}"><div class="thumb ${artClass(p)}">${media?`<img src="${escapeHtml(media)}" alt="${escapeHtml(p.title)}" loading="lazy">`:'<span class="art"></span>'}<span class="shade"></span><span class="thumbLabel">${escapeHtml(p.title)}</span></div><div class="workInfo"><div class="workMeta"><span>${escapeHtml(p.category)}</span><span>${escapeHtml(p.year||'')}</span></div><p>${escapeHtml(p.description||'')}</p><span class="workBadge">Open edit breakdown →</span></div></article>`}).join(''):`<div class="notice" style="grid-column:1/-1">No published projects yet. Add real work from <a href="/admin" style="color:var(--gold2)">Admin</a>.</div>`;
+    $$('#workGrid .workCard').forEach(c=>c.onclick=()=>openProject(c.dataset.slug));
+  }
+  function renderServices(){if(!servicesGrid)return;servicesGrid.innerHTML=(SITE.services||[]).map((s,i)=>`<article class="service"><span class="idx mono">${String(i+1).padStart(2,'0')}</span><h3>${escapeHtml(s.title)}</h3><p>${escapeHtml(s.description||'')}</p>${parseList(s.deliverables).length?`<div class="skillTags">${parseList(s.deliverables).slice(0,3).map(x=>`<span class="tag">${escapeHtml(x)}</span>`).join('')}</div>`:''}</article>`).join('')}
+  function renderPricing(){if(!pricingGrid)return;pricingGrid.innerHTML=(SITE.pricing||[]).map((p,i)=>`<article class="priceCard ${p.featured?'featured':''}"><div class="kicker">${p.featured?'FEATURED':'STARTING POINT'}</div><h3>${escapeHtml(p.name)}</h3><div class="price">${escapeHtml(p.price||'Custom quote')}</div><ul>${parseList(p.deliverables).map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul><div style="margin-top:22px"><a class="btn btnGhost" href="#contact">${escapeHtml(p.cta_label||'Start a project')}</a></div></article>`).join('')}
+
+  async function openProject(slug){
+    try{const p=await api('/api/projects/'+encodeURIComponent(slug)); const media=formatImageUrl(p.poster_url||p.thumbnail_url); const dna=String(p.editing_dna||'').split(',').map(x=>x.trim()).filter(Boolean); const marks=p.markers||[]; const breakdown=p.breakdown||[]; const tl=p.timeline||{};
+      $('#modalKicker').textContent=`${String(p.category||'PROJECT').toUpperCase()} · ${p.year||''}`;
+      const video=p.video_url?renderVideoEmbed(p.video_url,media):`<span class="art ${artClass(p)}"></span><div class="playerOverlay"><div class="playbig">▶</div></div>`;
+      const tracks=Array.isArray(tl.tracks)?tl.tracks:[];
+      const trackRows=tracks.length?tracks.map(tr=>`<div class="lane"><div style="padding:5px 8px;font-size:.66rem;color:var(--muted)">${escapeHtml(tr.name||tr.type||'Track')}</div>${(tr.clips||[]).map(cl=>`<div class="clip overlay" style="left:${Number(cl.start||0)}%;width:${Number(cl.width||20)}%">${escapeHtml(cl.label||'CLIP')}</div>`).join('')}</div>`).join(''):`<div class="lane"><div class="clip overlay" style="left:0;width:35%">RAW / CUT</div><div class="clip overlay" style="left:36%;width:29%">B-ROLL</div><div class="clip overlay" style="left:67%;width:33%">FINAL</div></div><div class="lane"><div class="wave">${Array.from({length:64},(_,i)=>`<i class="bar" style="height:${25+Math.abs(Math.sin(i/3))*65}%"></i>`).join('')}</div></div>`;
+      $('#modalBody').innerHTML=`<div class="projectHero"><div><div class="player">${video}</div><div class="modalTimeline"><div class="timeline"><div class="labels"><span></span>${tracks.slice(0,2).map((t,i)=>`<span>${escapeHtml((t.name||('V'+(2-i))).slice(0,3))}</span>`).join('')}<span>A1</span></div><div class="lanes"><div class="ruler"></div>${trackRows}<div class="playhead" style="left:34%"></div></div></div></div></div><div class="projectCopy"><div class="kicker">${escapeHtml(p.role||'Editor')}</div><h2>${escapeHtml(p.title)}</h2><p>${escapeHtml(p.description||'')}</p><div class="skillTags">${dna.map(x=>`<span class="tag">${escapeHtml(x)}</span>`).join('')}</div><div class="projectMeta"><div class="metaItem"><small>Format</small><strong>${escapeHtml(p.subcategory||'Video')}</strong></div><div class="metaItem"><small>Tools</small><strong>${escapeHtml(p.tools||'—')}</strong></div><div class="metaItem"><small>Raw footage</small><strong>${p.raw_footage_url?'Available':'Not supplied'}</strong></div><div class="metaItem"><small>Hosting</small><strong>${escapeHtml(p.video_hosting||'self')}</strong></div></div>${p.objective?`<div class="breakdown"><h3>Objective</h3><p>${escapeHtml(p.objective)}</p></div>`:''}${p.editing_approach?`<div class="breakdown"><h3>Editing approach</h3><p>${escapeHtml(p.editing_approach)}</p></div>`:''}</div></div><div class="breakdown"><h3>Why this cut?</h3>${breakdown.length?breakdown.map(r=>`<div class="breakdownRow"><time>${escapeHtml(r.timestamp||r[0]||'')}</time><strong>${escapeHtml(r.title||r[1]||'Moment')}</strong><span>${escapeHtml(r.description||r[2]||'')}</span></div>`).join(''):'<div class="notice">Add markers and breakdown notes for this project from the admin panel.</div>'}</div>${marks.length?`<div class="breakdown"><h3>Markers</h3>${marks.map(m=>`<div class="breakdownRow"><time>${escapeHtml(m.timestamp||'')}</time><strong>${escapeHtml(m.label||m.title||'Marker')}</strong><span>${escapeHtml(m.note||m.description||'')}</span></div>`).join('')}</div>`:''}<div class="notice">Project content is powered by the private CMS. Replace demo visuals with your real footage in Admin.</div>`;
+      $('#modal').classList.add('open');$('#modal').setAttribute('aria-hidden','false');document.body.style.overflow='hidden';
+      api('/api/analytics/event',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({event_name:'project_open',project_slug:slug,path:location.pathname})}).catch(()=>{});
+    }catch(e){alert(e.message)}
+  }
+  function closeProject(){$('#modal').classList.remove('open');$('#modal').setAttribute('aria-hidden','true');document.body.style.overflow=''}
+
+  // Navigation / theme
+  const nav=$('#nav');let lastY=0;window.addEventListener('scroll',()=>{const y=scrollY;nav.classList.toggle('scrolled',y>20);if(y>lastY&&y>100)nav.classList.add('hidden');else nav.classList.remove('hidden');lastY=y},{passive:true});
+  const menuBtn=$('#menuBtn');if(menuBtn)menuBtn.onclick=()=>nav.classList.toggle('navopen');
+  const themeBtn=$('#themeBtn');if(themeBtn)themeBtn.onclick=()=>{document.documentElement.classList.toggle('light');localStorage.setItem('levi-theme',document.documentElement.classList.contains('light')?'light':'dark');themeBtn.textContent=document.documentElement.classList.contains('light')?'☾':'☼'};if(localStorage.getItem('levi-theme')==='light'){document.documentElement.classList.add('light');if(themeBtn)themeBtn.textContent='☾'}
+
+  // Hero timeline
+  const SCENES=[{name:'Reels & Shorts',ratio:'9:16'},{name:'YouTube edits',ratio:'16:9'},{name:'Motion design',ratio:'2.39:1'}];let t=2,playing=true,cur=-1;const DUR=12,FPS=24;
+  const screen=$('#screen'),sceneName=$('#sceneName'),heroTimeline=$('#heroTimeline'),playhead=$('#playhead'),timecode=$('#timecode'),playPause=$('#playPause'),wave=$('#wave'),v1=$('#v1'),v2=$('#v2');
+  const screens=[...document.querySelectorAll('.screen .scene')],clips=[];
+  if(v1&&v2){SCENES.forEach((s,i)=>{const c=document.createElement('div');c.className=`clip ${i===0?'reel':i===1?'yt':'motion'}`;c.style.left=`${i*33.333}%`;c.style.width='calc(33.333% - 2px)';c.textContent=i===0?'REELS':i===1?'YOUTUBE':'MOTION';v1.appendChild(c);clips.push(c)});[[6,26],[47,62],[73,92]].forEach(r=>{const c=document.createElement('div');c.className='clip overlay';c.style.left=r[0]+'%';c.style.width=(r[1]-r[0])+'%';v2.appendChild(c)});for(let i=0;i<100;i++){const b=document.createElement('i');b.className='bar';b.style.height=(22+Math.abs(Math.sin(i/6)+Math.sin(i/2.7))*24+Math.random()*30)+'%';wave.appendChild(b)}}
+  function pad(n){return String(n).padStart(2,'0')}
+  function setT(x){t=Math.max(0,Math.min(DUR-.001,x));const idx=Math.min(2,Math.floor(t/(DUR/3)));if(idx!==cur){cur=idx;screens.forEach((s,i)=>s.classList.toggle('active',i===idx));screen.classList.toggle('vertical',idx===0);screen.classList.toggle('wide',idx===2);sceneName.textContent=SCENES[idx].name+', '+SCENES[idx].ratio;clips.forEach((c,i)=>c.classList.toggle('on',i===idx))}playhead.style.left=(t/DUR*100)+'%';const f=Math.floor(t*FPS);timecode.textContent=`00:${pad(Math.floor(f/(FPS*60)))}:${pad(Math.floor(f/FPS)%60)}:${pad(f%FPS)}`;heroTimeline.setAttribute('aria-valuenow',Math.round(t))}
+  function syncBtn(){playPause.textContent=playing?'Ⅱ':'▶'}
+  function fromPointer(e){const r=heroTimeline.getBoundingClientRect();return ((e.clientX-r.left)/r.width)*DUR}
+  let drag=false,was=false;heroTimeline.addEventListener('pointerdown',e=>{drag=true;was=playing;playing=false;heroTimeline.setPointerCapture(e.pointerId);setT(fromPointer(e))});heroTimeline.addEventListener('pointermove',e=>{if(drag)setT(fromPointer(e))});['pointerup','pointercancel'].forEach(ev=>heroTimeline.addEventListener(ev,()=>{drag=false;playing=was;syncBtn()}));heroTimeline.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){setT(t+.25);e.preventDefault()}if(e.key==='ArrowLeft'){setT(t-.25);e.preventDefault()}if(e.code==='Space'){playing=!playing;syncBtn();e.preventDefault()}});playPause.onclick=()=>{playing=!playing;syncBtn()};let last=performance.now();function loop(now){const dt=Math.min((now-last)/1000,.1);last=now;if(playing&&!drag)setT((t+dt)%DUR);requestAnimationFrame(loop)}syncBtn();setT(t);requestAnimationFrame(loop);
+
+  $('#modalClose').onclick=closeProject;$('#modal').addEventListener('click',e=>{if(e.target===$('#modal'))closeProject()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeProject()});
+  document.getElementById('year').textContent=new Date().getFullYear();
+  const form=$('#inquiryForm');if(form)form.addEventListener('submit',async e=>{e.preventDefault();const status=$('#formStatus');status.textContent='Sending…';try{const r=await fetch('/api/inquiries',{method:'POST',body:new FormData(form)});const data=await r.json();if(!r.ok)throw new Error(data.error||'Unable to send');form.reset();status.textContent='Brief sent. I’ll review it from the private inbox.';api('/api/analytics/event',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({event_name:'inquiry_submitted',path:location.pathname})}).catch(()=>{});}catch(err){status.textContent=err.message}});
+  loadSite();
+})();
+</script>
+</body>
+</html>
